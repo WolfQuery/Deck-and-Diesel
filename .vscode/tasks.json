@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run in external terminal",
+      "type": "process",
+      "command": "cmd.exe",
+      "args": [
+        "/c",
+        "start",
+        "cmd.exe",
+        "/k",
+        ".venv\\Scripts\\python.exe main.py"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
+
