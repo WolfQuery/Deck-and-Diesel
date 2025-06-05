@@ -1,3 +1,4 @@
 rich
 DateTime
 colorama
+blessed
