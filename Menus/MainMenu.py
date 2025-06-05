@@ -1,7 +1,9 @@
 from blessed import Terminal
+import time
 
 def load_game():
     print("Loading game...")
+    time.sleep(1)
 
 def save_game():
     print("Saving game...")
