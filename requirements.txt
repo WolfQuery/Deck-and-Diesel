@@ -1,4 +1,0 @@
-rich
-DateTime
-colorama
-blessed
