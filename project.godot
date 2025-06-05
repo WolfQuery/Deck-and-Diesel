@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Deck & Diesel"
+run/main_scene="uid://0f8i6t5p0p8w"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -27,6 +28,14 @@ layout/style_directory={}
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/Todo_Manager/plugin.cfg", "res://addons/dialogic/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://Assets/": "orange",
+"res://Menus/": "yellow",
+"res://addons/": "red"
+}
 
 [input]
 

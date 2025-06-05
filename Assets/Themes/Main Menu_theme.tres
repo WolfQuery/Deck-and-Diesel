@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cshfuesv2yad4"]
+
+[ext_resource type="FontFile" uid="uid://84xxk3jxo1rg" path="res://Assets/Fonts/PTMono-Regular.ttf" id="1_8dwx1"]
+
+[resource]
+default_font = ExtResource("1_8dwx1")

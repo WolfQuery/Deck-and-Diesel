@@ -1,4 +1,8 @@
-[gd_scene format=3 uid="uid://0f8i6t5p0p8w"]
+[gd_scene load_steps=4 format=3 uid="uid://0f8i6t5p0p8w"]
+
+[ext_resource type="FontFile" uid="uid://4b4xkddhtl3e" path="res://Assets/Fonts/ShadowOfXizor-5l0V.ttf" id="1_6uquc"]
+[ext_resource type="Script" uid="uid://bve03clmhtj8m" path="res://Menus/main_menu.gd" id="1_atfkv"]
+[ext_resource type="Theme" uid="uid://cshfuesv2yad4" path="res://Assets/Themes/Main Menu_theme.tres" id="2_mjf7j"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -7,6 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_atfkv")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -28,3 +33,39 @@ theme_override_constants/margin_left = 10
 theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
+
+[node name="Label" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.815003, 0.000129977, 7.13298e-05, 1)
+theme_override_fonts/font = ExtResource("1_6uquc")
+theme_override_font_sizes/font_size = 125
+text = "DECK & DIESEL"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="PlayButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_mjf7j")
+theme_override_font_sizes/font_size = 55
+text = "play"
+
+[node name="SettingsButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_mjf7j")
+theme_override_font_sizes/font_size = 55
+text = "options"
+
+[node name="QuitButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_mjf7j")
+theme_override_font_sizes/font_size = 55
+text = "quit"
+
+[connection signal="button_up" from="MarginContainer/VBoxContainer/PlayButton" to="." method="_on_play_button_button_up"]
+[connection signal="button_up" from="MarginContainer/VBoxContainer/SettingsButton" to="." method="_on_settings_button_button_up"]
+[connection signal="button_up" from="MarginContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_button_up"]
