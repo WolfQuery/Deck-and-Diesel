@@ -1,2 +1,3 @@
-colorist
+rich
 DateTime
+colorama
