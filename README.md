@@ -1,7 +1,3 @@
-Here's the updated **README** tailored to the new direction of your game, while preserving the title and license:
-
----
-
 # 🚂 Deck & Diesel
 
 *A terminal-based ASCII visual novel about strangers, stories, and steampunk blackjack.*
