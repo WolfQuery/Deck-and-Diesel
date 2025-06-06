@@ -40,8 +40,8 @@ folder_colors={
 
 [github_to_itch]
 
-config/itch_username=""
-config/itch_project_name=""
+config/itch_username="WolfQuery"
+config/itch_project_name="decks-and-diesel"
 
 [input]
 
