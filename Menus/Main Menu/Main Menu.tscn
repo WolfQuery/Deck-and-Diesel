@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://0f8i6t5p0p8w"]
+[gd_scene load_steps=7 format=3 uid="uid://0f8i6t5p0p8w"]
 
 [ext_resource type="Script" uid="uid://bve03clmhtj8m" path="res://Menus/Main Menu/main_menu.gd" id="1_ds64n"]
 [ext_resource type="Shader" uid="uid://7x0l7tn7fmpq" path="res://Menus/Main Menu/Main Menu_background shader.gdshader" id="1_u516p"]
 [ext_resource type="FontFile" uid="uid://4b4xkddhtl3e" path="res://Assets/Fonts/ShadowOfXizor-5l0V.ttf" id="2_u516p"]
 [ext_resource type="Theme" uid="uid://cshfuesv2yad4" path="res://Assets/Themes/Main Menu_theme.tres" id="3_or7o0"]
+[ext_resource type="PackedScene" uid="uid://qr2fgcipdufw" path="res://Menus/Settings Menu/Settings Menu.tscn" id="5_or7o0"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_u516p"]
 shader = ExtResource("1_u516p")
@@ -85,6 +86,9 @@ theme_override_font_sizes/font_size = 125
 text = "DIESEL"
 horizontal_alignment = 1
 
+[node name="separator" type="Control" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
 [node name="PlayButton" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("3_or7o0")
@@ -102,6 +106,10 @@ layout_mode = 2
 theme = ExtResource("3_or7o0")
 theme_override_font_sizes/font_size = 55
 text = "quit"
+
+[node name="SettingsMenu" parent="." instance=ExtResource("5_or7o0")]
+visible = false
+layout_mode = 1
 
 [connection signal="button_up" from="MarginContainer/VBoxContainer/PlayButton" to="." method="_on_play_button_button_up"]
 [connection signal="button_up" from="MarginContainer/VBoxContainer/SettingsButton" to="." method="_on_settings_button_button_up"]

@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://qr2fgcipdufw"]
+
+[ext_resource type="Script" uid="uid://nu2u07igqly4" path="res://Menus/Settings Menu/settings_menu.gd" id="1_5insl"]
+[ext_resource type="FontFile" uid="uid://4b4xkddhtl3e" path="res://Assets/Fonts/ShadowOfXizor-5l0V.ttf" id="1_cgdfy"]
+[ext_resource type="Theme" uid="uid://cshfuesv2yad4" path="res://Assets/Themes/Main Menu_theme.tres" id="2_s3s4x"]
+[ext_resource type="PackedScene" uid="uid://c3gqvgnla8d26" path="res://Menus/Settings Menu/Settings Tab Container.tscn" id="3_b0i8n"]
+
+[node name="SettingsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5insl")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.815686, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_cgdfy")
+theme_override_font_sizes/font_size = 50
+text = "OPTIONS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SettingsTabContainer2" parent="MarginContainer/VBoxContainer" instance=ExtResource("3_b0i8n")]
+layout_mode = 2
+
+[node name="ExitButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+theme = ExtResource("2_s3s4x")
+theme_override_font_sizes/font_size = 25
+text = "exit"

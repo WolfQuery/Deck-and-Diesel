@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://dlafeglxt4apc"]
+
+[ext_resource type="Script" uid="uid://ds3k1io540pov" path="res://Menus/Settings Menu/hotkey_rebind_button.gd" id="1_0j2xb"]
+[ext_resource type="Theme" uid="uid://cshfuesv2yad4" path="res://Assets/Themes/Main Menu_theme.tres" id="1_g26du"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g26du"]
+
+[node name="HotkeyRebindButton" type="Control" groups=["hotkey_button"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0j2xb")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 40.0
+offset_bottom = 20.0
+grow_vertical = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+custom_minimum_size = Vector2(400, 30)
+layout_mode = 2
+theme = ExtResource("1_g26du")
+theme_override_font_sizes/font_size = 32
+text = "ACTION"
+
+[node name="VSeparator" type="VSeparator" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 425
+theme_override_styles/separator = SubResource("StyleBoxEmpty_g26du")
+
+[node name="Button" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+theme = ExtResource("1_g26du")
+toggle_mode = true
+text = "ACTION_KEY"
+
+[connection signal="toggled" from="HBoxContainer/Button" to="." method="_on_button_toggled"]

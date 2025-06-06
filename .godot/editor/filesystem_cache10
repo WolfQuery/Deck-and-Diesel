@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1749227859
+::res://::1749232078
 icon.png::CompressedTexture2D/CompressedTexture2D::5172581103700604142::1749226127::1749226127::1::::<><><>0<>0<>54eefa7eb3da688584d0893e5ccc5755<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 icon.svg::CompressedTexture2D/CompressedTexture2D::159351396465941860::1749225895::1749225895::1::::<><><>0<>0<>3d567d96032b6257d45cfc0aa92a56d2<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1749225895::0::1::::<><><>0<>0<><>::
-::res://addons/::1749227851
+::res://addons/::1749232048
 ::res://addons/dialogic/::1749225895
 plugin.cfg::TextFile/TextFile::-1::1749225895::0::1::::<><><>0<>0<><>::
 plugin.gd::GDScript/GDScript::3847838834304660710::1749225895::0::1::::<>EditorPlugin<><>0<>1<><>::
@@ -622,7 +622,27 @@ event.gd::GDScript/GDScript::8763588563558386910::1749225895::0::1::::DialogicEv
 timeline.gd::GDScript/GDScript::5667425671830628919::1749225895::0::1::::DialogicTimeline<>Resource<><>0<>1<><>::
 TimelineResourceLoader.gd::GDScript/GDScript::1953327801557244659::1749225895::0::1::::DialogicTimelineFormatLoader<>ResourceFormatLoader<><>0<>1<><>::
 TimelineResourceSaver.gd::GDScript/GDScript::6005903703142383367::1749225895::0::1::::DialogicTimelineFormatSaver<>ResourceFormatSaver<><>0<>1<><>::
-::res://addons/Todo_Manager/::1749227858
+::res://addons/signal_lens/::1749232048
+plugin.cfg::TextFile/TextFile::-1::1749232048::0::1::::<><><>0<>0<><>::
+plugin.gd::GDScript/GDScript::587137586979326679::1749232048::0::1::::<>EditorPlugin<><>0<>1<><>::
+::res://addons/signal_lens/autoload/::1749232048
+signal_lens_autoload.gd::GDScript/GDScript::6938762855457884243::1749232048::0::1::::<>Node<><>0<>0<><>::
+::res://addons/signal_lens/debugger/::1749232048
+signal_lens_debugger.gd::GDScript/GDScript::4416687771269362650::1749232048::0::1::::SignalLensDebugger<>EditorDebuggerPlugin<><>0<>0<><>::
+::res://addons/signal_lens/editor/::1749232048
+signal_lens_editor_panel.gd::GDScript/GDScript::3753262891250818049::1749232048::0::1::::SignalLensEditorPanel<>Control<><>0<>1<><>::
+signal_lens_editor_panel.tscn::PackedScene/PackedScene::411305403200968971::1749232048::0::1::::<><><>0<>0<><>::res://addons/signal_lens/editor/signal_lens_editor_panel.gd<>uid://brdnqivcfnsun::::res://addons/signal_lens/icons/icon_logo.png
+signal_lens_graph_node.gd::GDScript/GDScript::4981406123363232323::1749232048::0::1::::SignalLensGraphNode<>GraphNode<><>0<>0<><>::
+signal_lens_graph_node.tscn::PackedScene/PackedScene::5339835046082298284::1749232048::0::1::::<><><>0<>0<><>::res://addons/signal_lens/editor/signal_lens_graph_node.gd
+::res://addons/signal_lens/icons/::1749232048
+icon_logo.png::CompressedTexture2D/CompressedTexture2D::3586642505136052149::1749232048::1749232048::1::::<><><>0<>0<>02f4a212b1a85063f98c3507b645f5f2<>res://.godot/imported/icon_logo.png-5b28148684ce391f1d573fc1b0f67ff7.bptc.ctex::
+icon_monogram.png::CompressedTexture2D/CompressedTexture2D::7581860235462340305::1749232048::1749232048::1::::<><><>0<>0<>351332da0db70ad42a8703d409cc7b8a<>res://.godot/imported/icon_monogram.png-7d0e77813dbd8089a5f529fe0e619493.bptc.ctex::
+::res://addons/signal_lens/inspector/::1749232048
+signal_lens_remote_node_inspector.gd::GDScript/GDScript::2380982550578907387::1749232048::0::1::::SignalLensRemoteNodeInspector<>EditorInspectorPlugin<><>0<>0<><>::
+::res://addons/signal_lens/test_scene/::1749232048
+signal_lens_test_scene.gd::GDScript/GDScript::7483048078525851622::1749232048::0::1::::<>Control<><>0<>0<><>::
+signal_lens_test_scene.tscn::PackedScene/PackedScene::8490916320381556001::1749232048::0::1::::<><><>0<>0<><>::res://addons/signal_lens/test_scene/signal_lens_test_scene.gd
+::res://addons/Todo_Manager/::1749232077
 ColourPicker.gd::GDScript/GDScript::2477116773935054332::1749225895::0::1::::<>HBoxContainer<><>0<>1<><>::
 Current.gd::GDScript/GDScript::6719080688783978561::1749225895::0::1::::<>Panel<><>0<>1<><>::
 Dock.gd::GDScript/GDScript::8754708085405468315::1749225895::0::1::::<>Control<><>0<>1<><>::
@@ -630,7 +650,7 @@ Pattern.gd::GDScript/GDScript::8639368016530276617::1749225895::0::1::::<>HBoxCo
 plugin.cfg::TextFile/TextFile::-1::1749225895::0::1::::<><><>0<>0<><>::
 plugin.gd::GDScript/GDScript::7683655548430555107::1749225895::0::1::::<>EditorPlugin<><>0<>1<><>::
 Project.gd::GDScript/GDScript::2525022914086031680::1749225895::0::1::::<>Panel<><>0<>1<><>::
-todo.cfg::TextFile::-1::1749227858::0::1::::<><><>0<>0<><>::
+todo.cfg::TextFile::-1::1749232077::0::1::::<><><>0<>0<><>::
 todoItem_class.gd::GDScript/GDScript::4317786598848568337::1749225895::0::1::::<>RefCounted<><>0<>1<><>::
 todo_class.gd::GDScript/GDScript::2041409966468473158::1749225895::0::1::::<>RefCounted<><>0<>1<><>::
 ::res://addons/Todo_Manager/doc/::1749225895
@@ -655,8 +675,13 @@ ShadowOfXizor-5l0V.ttf::FontFile/FontFile::2039343239321374736::1749225895::1749
 VCR_OSD_MONO_1.001.ttf::FontFile/FontFile::8682411776338403040::1749225895::1749225970::1::::<><><>0<>0<>13ccdb1dcc1fe75337f0bb0251e2983b<>res://.godot/imported/VCR_OSD_MONO_1.001.ttf-5d7d36200f90dd5cddd63eb8696a74f9.fontdata::
 ::res://Assets/Themes/::1749225895
 Main Menu_theme.tres::Theme/Theme::6051030736882182163::1749225895::0::1::::<><><>0<>0<><>::uid://84xxk3jxo1rg::::res://Assets/Fonts/PTMono-Regular.ttf
-::res://Menus/::1749226302
-::res://Menus/Main Menu/::1749227854
-Main Menu.tscn::PackedScene::1767062585792888172::1749226961::0::1::::<><><>0<>0<><>::uid://bve03clmhtj8m::::res://Menus/Main Menu/main_menu.gd<>uid://7x0l7tn7fmpq::::res://Menus/Main Menu/Main Menu_background shader.gdshader<>uid://4b4xkddhtl3e::::res://Assets/Fonts/ShadowOfXizor-5l0V.ttf<>uid://cshfuesv2yad4::::res://Assets/Themes/Main Menu_theme.tres
-Main Menu_background shader.gdshader::Shader::2295062964044649286::1749227854::0::1::::<><><>0<>0<><>::
-main_menu.gd::GDScript::3870211960751405530::1749225895::0::1::::<>Control<><>0<>0<><>::
+::res://Menus/::1749230456
+::res://Menus/Main Menu/::1749232073
+Main Menu.tscn::PackedScene::1767062585792888172::1749231998::0::1::::<><><>0<>0<><>::uid://bve03clmhtj8m::::res://Menus/Main Menu/main_menu.gd<>uid://7x0l7tn7fmpq::::res://Menus/Main Menu/Main Menu_background shader.gdshader<>uid://4b4xkddhtl3e::::res://Assets/Fonts/ShadowOfXizor-5l0V.ttf<>uid://cshfuesv2yad4::::res://Assets/Themes/Main Menu_theme.tres<>uid://qr2fgcipdufw::::res://Menus/Settings Menu/Settings Menu.tscn
+Main Menu_background shader.gdshader::Shader::2295062964044649286::1749232073::0::1::::<><><>0<>0<><>::
+main_menu.gd::GDScript::3870211960751405530::1749231990::0::1::::MainMenu<>Control<><>0<>0<><>::
+::res://Menus/SaveFile Select/::1749231167
+Save File Select.tscn::PackedScene::4634921041566611133::1749231167::0::1::::<><><>0<>0<><>::
+::res://Menus/Settings Menu/::1749231998
+Settings Menu.tscn::PackedScene::1159764526415132696::1749231998::0::1::::<><><>0<>0<><>::uid://nu2u07igqly4::::res://Menus/Settings Menu/settings_menu.gd<>uid://4b4xkddhtl3e::::res://Assets/Fonts/ShadowOfXizor-5l0V.ttf<>uid://cshfuesv2yad4::::res://Assets/Themes/Main Menu_theme.tres
+settings_menu.gd::GDScript::955418959948047705::1749231754::0::1::::SettingsMenu<>Control<><>0<>0<><>::
