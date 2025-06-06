@@ -37,6 +37,11 @@ folder_colors={
 "res://addons/": "red"
 }
 
+[github_to_itch]
+
+config/itch_username=""
+config/itch_project_name=""
+
 [input]
 
 dialogic_default_action={

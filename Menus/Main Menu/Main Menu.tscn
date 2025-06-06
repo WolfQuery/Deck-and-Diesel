@@ -1,0 +1,108 @@
+[gd_scene load_steps=6 format=3 uid="uid://0f8i6t5p0p8w"]
+
+[ext_resource type="Script" uid="uid://bve03clmhtj8m" path="res://Menus/Main Menu/main_menu.gd" id="1_ds64n"]
+[ext_resource type="Shader" uid="uid://7x0l7tn7fmpq" path="res://Menus/Main Menu/Main Menu_background shader.gdshader" id="1_u516p"]
+[ext_resource type="FontFile" uid="uid://4b4xkddhtl3e" path="res://Assets/Fonts/ShadowOfXizor-5l0V.ttf" id="2_u516p"]
+[ext_resource type="Theme" uid="uid://cshfuesv2yad4" path="res://Assets/Themes/Main Menu_theme.tres" id="3_or7o0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u516p"]
+shader = ExtResource("1_u516p")
+shader_parameter/rain_amount = 200.0
+shader_parameter/near_rain_length = 0.075
+shader_parameter/far_rain_length = 0.03
+shader_parameter/near_rain_width = 0.484
+shader_parameter/far_rain_width = 0.197
+shader_parameter/near_rain_transparency = 1.0
+shader_parameter/far_rain_transparency = 0.5
+shader_parameter/rain_color = Color(0.408329, 0.408329, 0.408329, 1)
+shader_parameter/base_rain_speed = 0.3
+shader_parameter/additional_rain_speed = 0.287
+shader_parameter/slant = 0.25
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ds64n")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_u516p")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.103744, 0.103744, 0.103744, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 30
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="DecksTitle" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.815003, 0.000129977, 7.13298e-05, 1)
+theme_override_fonts/font = ExtResource("2_u516p")
+theme_override_font_sizes/font_size = 125
+text = "DECKS"
+horizontal_alignment = 1
+
+[node name="&Title" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.815003, 0.000129977, 7.13298e-05, 1)
+theme_override_fonts/font = ExtResource("2_u516p")
+theme_override_font_sizes/font_size = 125
+text = " & "
+horizontal_alignment = 1
+
+[node name="DieselTitle" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.815003, 0.000129977, 7.13298e-05, 1)
+theme_override_fonts/font = ExtResource("2_u516p")
+theme_override_font_sizes/font_size = 125
+text = "DIESEL"
+horizontal_alignment = 1
+
+[node name="PlayButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_or7o0")
+theme_override_font_sizes/font_size = 55
+text = "play"
+
+[node name="SettingsButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_or7o0")
+theme_override_font_sizes/font_size = 55
+text = "options"
+
+[node name="QuitButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_or7o0")
+theme_override_font_sizes/font_size = 55
+text = "quit"
+
+[connection signal="button_up" from="MarginContainer/VBoxContainer/PlayButton" to="." method="_on_play_button_button_up"]
+[connection signal="button_up" from="MarginContainer/VBoxContainer/SettingsButton" to="." method="_on_settings_button_button_up"]
+[connection signal="button_up" from="MarginContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_button_up"]
