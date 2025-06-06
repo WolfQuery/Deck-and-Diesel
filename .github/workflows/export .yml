@@ -1,0 +1,22 @@
+# .github/workflows/export.yml
+name: Godot Export
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Export Game
+        uses: firebelley/godot-export@v4
+        with:
+          godot_executable_download_url: https://downloads.tuxfamily.org/godotengine/4.4.1/Godot_v4.4.1-stable_linux.x86_64.zip
+          export_presets: 'Windows Desktop;Linux/X11'
+          use_build_cache: true
+          relative_export_path: ./builds
+          archive_output: true
