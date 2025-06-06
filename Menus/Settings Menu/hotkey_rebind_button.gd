@@ -21,17 +21,22 @@ func set_action_name() -> void:
 	
 	#TODO: assign any inputs to match according to the example
 	match action_name:
-		pass
+		"placeholder":
+			label.text = "placeholder"
 	# EXAMPLE: 
 		# "move_left":
 			# label.text = "move left"
 
 func set_text_for_key() -> void:
 	var action_events = InputMap.action_get_events(action_name)
+
+	if action_events.is_empty():
+		button.text = "unassigned"
+		return
+
 	var action_event = action_events[0]
-	var action_keycode = OS.get_keycode_string(action_event.physical_keycode)
-	
-	button.text = "%s" % action_keycode
+	button.text = action_event.as_text()
+
 
 
 func _on_button_toggled(toggled_on: bool) -> void:

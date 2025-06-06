@@ -96,6 +96,7 @@ theme_override_styles/separator = SubResource("StyleBoxEmpty_y5qsx")
 
 [node name="HotkeyRebindButton" parent="TabContainer/Controls/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_vjsch")]
 layout_mode = 2
+action_name = "placeholder"
 
 [node name="HotkeyRebindButton2" parent="TabContainer/Controls/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_vjsch")]
 layout_mode = 2
