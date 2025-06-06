@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1749226301
+::res://::1749227859
 icon.png::CompressedTexture2D/CompressedTexture2D::5172581103700604142::1749226127::1749226127::1::::<><><>0<>0<>54eefa7eb3da688584d0893e5ccc5755<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 icon.svg::CompressedTexture2D/CompressedTexture2D::159351396465941860::1749225895::1749225895::1::::<><><>0<>0<>3d567d96032b6257d45cfc0aa92a56d2<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1749225895::0::1::::<><><>0<>0<><>::
-::res://addons/::1749226127
+::res://addons/::1749227851
 ::res://addons/dialogic/::1749225895
 plugin.cfg::TextFile/TextFile::-1::1749225895::0::1::::<><><>0<>0<><>::
 plugin.gd::GDScript/GDScript::3847838834304660710::1749225895::0::1::::<>EditorPlugin<><>0<>1<><>::
@@ -563,12 +563,12 @@ event_text.gd::GDScript/GDScript::7199229198122971661::1749225895::0::1::::Dialo
 icon.svg::CompressedTexture2D/CompressedTexture2D::9151163472776694991::1749225895::1749225970::1::::<><><>0<>0<>c3322103d45750d096f11ecd03411177<>res://.godot/imported/icon.svg-e2501ddcdef01c7f2c3538940f5abfc1.ctex::
 index.gd::GDScript/GDScript::3735692247776249690::1749225895::0::1::::<>DialogicIndexer<><>0<>1<><>::
 manual_advance.gd::GDScript/GDScript::7278833021501408885::1749225895::0::1::::DialogicManualAdvance<>RefCounted<><>0<>0<><>::
-node_dialog_text.gd::GDScript/GDScript::8367256849905527338::1749225895::0::1::::DialogicNode_DialogText<>RichTextLabel<><>0<>0<><>::
+node_dialog_text.gd::GDScript/GDScript::8367256849905527338::1749225895::0::1::::DialogicNode_DialogText<>RichTextLabel<>res://addons/dialogic/Modules/Text/node_dialog_text_icon.svg<>0<>0<><>::
 node_dialog_text_icon.svg::CompressedTexture2D/CompressedTexture2D::4044689466443943908::1749225895::1749225970::1::::<><><>0<>0<>497fe8cd6cb72aeedb7077c36069c336<>res://.godot/imported/node_dialog_text_icon.svg-3cf845e99d76137d8156865c09f39e3e.ctex::
 node_input.gd::GDScript/GDScript::6135746528022206122::1749225895::0::1::::DialogicNode_Input<>Control<><>0<>0<><>::
-node_name_label.gd::GDScript/GDScript::2409060177523604634::1749225895::0::1::::DialogicNode_NameLabel<>Label<><>0<>0<><>::
+node_name_label.gd::GDScript/GDScript::2409060177523604634::1749225895::0::1::::DialogicNode_NameLabel<>Label<>res://addons/dialogic/Modules/Text/node_name_label_icon.svg<>0<>0<><>::
 node_name_label_icon.svg::CompressedTexture2D/CompressedTexture2D::753910208124862534::1749225895::1749225970::1::::<><><>0<>0<>3bc6897be0d1bfc61b99594389e51bf2<>res://.godot/imported/node_name_label_icon.svg-d482939b74b41ec2da6edc97e41c8bf8.ctex::
-node_next_indicator.gd::GDScript/GDScript::8643102605516753138::1749225895::0::1::::DialogicNode_NextIndicator<>Control<><>0<>0<><>::
+node_next_indicator.gd::GDScript/GDScript::8643102605516753138::1749225895::0::1::::DialogicNode_NextIndicator<>Control<>res://addons/dialogic/Modules/Text/node_next_indicator_icon.svg<>0<>0<><>::
 node_next_indicator_icon.svg::CompressedTexture2D/CompressedTexture2D::302873534409359568::1749225895::1749225970::1::::<><><>0<>0<>d16cf5e370ce5bad31aa615e40bbdce1<>res://.godot/imported/node_next_indicator_icon.svg-06167a3b3e290941c1c34386ebd60af8.ctex::
 node_type_sound.gd::GDScript/GDScript::8257091630640999901::1749225895::0::1::::DialogicNode_TypeSounds<>AudioStreamPlayer<><>0<>1<><>::
 settings_text.gd::GDScript/GDScript::5031029662621467051::1749225895::0::1::::<>DialogicSettingsPage<><>0<>1<><>::
@@ -622,21 +622,7 @@ event.gd::GDScript/GDScript::8763588563558386910::1749225895::0::1::::DialogicEv
 timeline.gd::GDScript/GDScript::5667425671830628919::1749225895::0::1::::DialogicTimeline<>Resource<><>0<>1<><>::
 TimelineResourceLoader.gd::GDScript/GDScript::1953327801557244659::1749225895::0::1::::DialogicTimelineFormatLoader<>ResourceFormatLoader<><>0<>1<><>::
 TimelineResourceSaver.gd::GDScript/GDScript::6005903703142383367::1749225895::0::1::::DialogicTimelineFormatSaver<>ResourceFormatSaver<><>0<>1<><>::
-::res://addons/github_to_itch/::1749226127
-plugin.cfg::TextFile/TextFile::-1::1749226127::0::1::::<><><>0<>0<><>::
-plugin.gd::GDScript/GDScript::6891428198060405441::1749226127::0::1::::<>EditorPlugin<><>0<>1<><>::
-popup.tscn::PackedScene/PackedScene::6476020554230657979::1749226127::0::1::::<><><>0<>0<><>::uid://c2mxwc6kxe5m2::::res://addons/github_to_itch/ui/config.tscn
-templates.gd::GDScript/GDScript::8150500069213097186::1749226127::0::1::::<>RefCounted<><>0<>1<><>::
-::res://addons/github_to_itch/assets/::1749226127
-secrets.png::CompressedTexture2D/CompressedTexture2D::8630423545584818827::1749226127::1749226127::1::::<><><>0<>0<>bb885338d81f7c9d320f741955f7add2<>res://.godot/imported/secrets.png-c26bb3c50cf6b47b37a423ad8e328888.ctex::
-::res://addons/github_to_itch/tempaltes/::1749226127
-notify_job.yml::TextFile/TextFile::-1::1749226127::0::1::::<><><>0<>0<><>::
-workflow_template.yml::TextFile/TextFile::-1::1749226127::0::1::::<><><>0<>0<><>::
-::res://addons/github_to_itch/ui/::1749226127
-config.gd::GDScript/GDScript::2104229871151230591::1749226127::0::1::::<>ScrollContainer<><>0<>1<><>::
-config.tscn::PackedScene/PackedScene::6694148610382249659::1749226127::0::1::::<><><>0<>0<><>::res://addons/github_to_itch/ui/config.gd<>uid://bk128k0tftsey::::res://addons/github_to_itch/ui/info_bubble.tscn
-info_bubble.tscn::PackedScene/PackedScene::3143681796406869488::1749226127::0::1::::<><><>0<>0<><>::
-::res://addons/Todo_Manager/::1749226299
+::res://addons/Todo_Manager/::1749227858
 ColourPicker.gd::GDScript/GDScript::2477116773935054332::1749225895::0::1::::<>HBoxContainer<><>0<>1<><>::
 Current.gd::GDScript/GDScript::6719080688783978561::1749225895::0::1::::<>Panel<><>0<>1<><>::
 Dock.gd::GDScript/GDScript::8754708085405468315::1749225895::0::1::::<>Control<><>0<>1<><>::
@@ -644,7 +630,7 @@ Pattern.gd::GDScript/GDScript::8639368016530276617::1749225895::0::1::::<>HBoxCo
 plugin.cfg::TextFile/TextFile::-1::1749225895::0::1::::<><><>0<>0<><>::
 plugin.gd::GDScript/GDScript::7683655548430555107::1749225895::0::1::::<>EditorPlugin<><>0<>1<><>::
 Project.gd::GDScript/GDScript::2525022914086031680::1749225895::0::1::::<>Panel<><>0<>1<><>::
-todo.cfg::TextFile::-1::1749226299::0::1::::<><><>0<>0<><>::
+todo.cfg::TextFile::-1::1749227858::0::1::::<><><>0<>0<><>::
 todoItem_class.gd::GDScript/GDScript::4317786598848568337::1749225895::0::1::::<>RefCounted<><>0<>1<><>::
 todo_class.gd::GDScript/GDScript::2041409966468473158::1749225895::0::1::::<>RefCounted<><>0<>1<><>::
 ::res://addons/Todo_Manager/doc/::1749225895
@@ -669,7 +655,8 @@ ShadowOfXizor-5l0V.ttf::FontFile/FontFile::2039343239321374736::1749225895::1749
 VCR_OSD_MONO_1.001.ttf::FontFile/FontFile::8682411776338403040::1749225895::1749225970::1::::<><><>0<>0<>13ccdb1dcc1fe75337f0bb0251e2983b<>res://.godot/imported/VCR_OSD_MONO_1.001.ttf-5d7d36200f90dd5cddd63eb8696a74f9.fontdata::
 ::res://Assets/Themes/::1749225895
 Main Menu_theme.tres::Theme/Theme::6051030736882182163::1749225895::0::1::::<><><>0<>0<><>::uid://84xxk3jxo1rg::::res://Assets/Fonts/PTMono-Regular.ttf
-::res://Menus/::1749226301
-main_menu.gd::GDScript/GDScript::3870211960751405530::1749225895::0::1::::<>Control<><>0<>0<><>::
-::res://Menus/Main Menu/::1749226301
-Main Menu.tscn::PackedScene::1767062585792888172::1749226302::0::1::::<><><>0<>0<><>::uid://bve03clmhtj8m::::res://Menus/main_menu.gd<>uid://4b4xkddhtl3e::::res://Assets/Fonts/ShadowOfXizor-5l0V.ttf<>uid://cshfuesv2yad4::::res://Assets/Themes/Main Menu_theme.tres
+::res://Menus/::1749226302
+::res://Menus/Main Menu/::1749227854
+Main Menu.tscn::PackedScene::1767062585792888172::1749226961::0::1::::<><><>0<>0<><>::uid://bve03clmhtj8m::::res://Menus/Main Menu/main_menu.gd<>uid://7x0l7tn7fmpq::::res://Menus/Main Menu/Main Menu_background shader.gdshader<>uid://4b4xkddhtl3e::::res://Assets/Fonts/ShadowOfXizor-5l0V.ttf<>uid://cshfuesv2yad4::::res://Assets/Themes/Main Menu_theme.tres
+Main Menu_background shader.gdshader::Shader::2295062964044649286::1749227854::0::1::::<><><>0<>0<><>::
+main_menu.gd::GDScript::3870211960751405530::1749225895::0::1::::<>Control<><>0<>0<><>::
